@@ -1,0 +1,188 @@
+
+
+/* Table Of Contents */
+/* -----------------------------------------------
+    01-Base Settings
+    02-Top-Bar
+   -----------------------------------------------
+*/
+
+
+/* 01-Base Settings */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+html,body {
+	position: relative;
+    height: 100%;
+}
+body {
+	font-family: @Font;
+	background: @darkColor;
+	color: @menuColor;
+    line-height: 1.7;
+}
+//body
+//
+h1,h2,h3,h4,h5,h6 {
+	font-family: inherit;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: @darkColor;
+    line-height: 1.7;
+}
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 2rem;}
+h4 {font-size: 1.6rem;}
+h5 {font-size: 1.4rem;}
+h6 {font-size: 1.2rem;}
+// End Of Heading
+//
+p {
+	font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+//p
+img {
+    max-width: 100%;
+    height: auto;
+}
+//img
+//
+a {
+    color: @darkColor;
+    text-decoration: none;
+    .transition(.35s);
+
+    &:hover,
+    &:focus {
+        .transition(.35s);
+        color: @darkColor;
+        text-decoration: none;
+    }
+}
+//a
+//
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+//ul & ol
+//
+
+input,textarea,select {
+    padding: 1rem;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    font-size: 1.3rem;
+    text-transform: none;
+    text-align: right;
+    color: ;
+    border: .1rem solid ;
+    border-radius: 0;
+
+    &::-webkit-input-placeholder {
+        color: ;
+        font-size: 1.2rem;
+        opacity: .4;
+    }
+
+    &:-ms-input-placeholder {
+        color: ;
+        font-size: 1.2rem;
+        opacity: .4;
+    }
+
+    &::-moz-placeholder { // Firefox 19+ /
+        color: ;
+        font-size: 1.2rem;
+        opacity: .4;
+    }
+
+    &:-moz-placeholder { // Firefox 18- /
+        color: ;
+        font-size: 1.2rem;
+        opacity: .4;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//input & textarea
+//
+button {
+    background: ;
+    text-transform: uppercase;
+    color: ;
+    border: 0;
+    border-radius: 0;
+    padding: 0.7rem 2rem;
+
+    &:hover,
+    &:focus {
+        outline: 0;
+        color: ;
+    }
+}
+//button
+//
+hr {
+    background: ;
+    border:0;
+    height: 0.1rem;
+    border-bottom: 0;
+    border-color: 0;
+    margin-bottom: 3rem;
+}
+//hr
+//
+blockquote {
+    color: ;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2.2rem;
+    border-left: 0.4rem solid ;
+    font-style: italic;
+    line-height: 2.8rem;
+}
+//blockquote
+//
+pre {
+
+    background: ;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom:0;
+    padding: 1.5rem;
+    overflow: auto;
+    max-width: 100%;
+    border: 0;
+    border-radius: 0;
+}
+//Pre
+//
+i {
+    font-style: normal;
+}
+.text-up {
+    text-transform: uppercase;
+}
+.la-no-pad {
+    padding: 0;
+}

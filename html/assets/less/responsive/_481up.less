@@ -1,0 +1,46 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.less styles.
+
+******************************************************************/
+.la-header-default {
+	padding: 0 1rem;
+	.la-site-branding {
+    	margin-right: 1.8rem;
+	}
+	.la-ctrl {
+		margin-left: 1rem !important;
+		.la-btn-back {
+			padding: .9rem 1rem;
+		}
+	}
+	.la-nav-right {
+		li {
+			margin-right: 1rem  !important;
+		}
+	}
+}
+
+.la-sidebar {
+	position: absolute;
+	height: 100%;
+	left: -100%;
+}
+.la-main {
+	width: 100%;
+	.la-raw-left,
+	.la-raw-right {
+		padding: 1rem;
+	}
+}

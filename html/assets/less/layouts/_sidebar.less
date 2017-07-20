@@ -1,0 +1,188 @@
+/* Sidebar */
+.la-sidebar {
+	background: @darkColor;
+	padding: 4rem 1rem;
+
+	.la-block {
+		h4 {
+			font-size: 1.6rem;
+			font-weight: 300;
+			margin-bottom: 3rem;
+			color: @white;
+			padding-left: 1rem;
+		}
+
+		.la-radio-options {
+			margin-bottom: 6rem;
+			padding-left: 1rem;
+			li {
+				line-height: 3rem;
+				color: @menuColor;
+				position: relative;
+				cursor: pointer;
+
+				input {
+					position: absolute;
+  					visibility: hidden;
+  					cursor: pointer;
+  					&:checked ~ .check {
+						border: .1rem solid;
+						border-color: @white;
+						&:before {
+							background: @white;
+						}
+  					}
+  					&:checked ~ label {
+  						color: @white;
+  					}
+				}
+				label {
+					.transition(.35s);
+					z-index: 9;
+					position: relative;
+					padding-left: 1.5rem;
+					cursor: pointer;
+					font-size: 1.3rem;
+					font-weight: 300;
+				}
+				.check {
+					display: block;
+					position: absolute;
+					border: .1rem solid;
+					border-color: @menuColor;
+					border-radius: 100%;
+					height: 1rem;
+					width: 1rem;
+					top: 1rem;
+					left: 0;
+					z-index: 5;
+					.transition(border .35s linear);
+
+					&:before {
+						display: block;
+						position: absolute;
+						content: '';
+						border-radius: 100%;
+						height: 0.6rem;
+    					width: 0.6rem;
+    					top: 1px;
+    					left: 1px;
+						margin: auto;
+						.transition(background .35s linear);
+					}
+				}
+
+				&:hover,
+				&:focus {
+					label {
+						color: @white;
+					}
+					.check {
+						border-color: @white;
+					}
+				}
+			}
+		}
+
+		.la-box-options {
+			
+			li {
+				line-height: 3.6rem;
+				color: @menuColor;
+				position: relative;
+				cursor: pointer;
+				margin-bottom: .4rem;
+				border-radius: .2rem;
+				.transition(.35s);
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				input {
+					position: absolute;
+  					visibility: hidden;
+  					cursor: pointer;
+  					&:checked ~ .check {
+						border: .1rem solid;
+						border-color: @darkColor;
+						&:before {
+							content: "\f00c";
+							font-family: Icons;
+   							font-style: normal;
+   							font-weight: 400;
+						}
+  					}
+  					&:checked ~ label {
+  						color: @darkColor;
+  					}
+				}
+				label {
+					.transition(.35s);
+					z-index: 9;
+					position: relative;
+					padding-left: 3.5rem;
+					cursor: pointer;
+					font-weight: 300;
+					display: block;
+					width: 100%;
+					font-size: 1.3rem;
+					font-weight: 400;
+				}
+				.check {
+					display: block;
+					position: absolute;
+					border: .1rem solid;
+					border-color: @menuColor;
+					height: 1rem;
+					width: 1rem;
+					top: 1.2rem;
+					left: 1rem;
+					z-index: 15;
+					.transition(border .35s linear);
+
+					&:before {
+						display: block;
+						position: absolute;
+						content: '';
+						font-size: 1rem;
+    					top: -1.5rem;
+    					left: 0;
+						margin: auto;
+						color: @darkColor;
+						.transition(background .35s linear);
+					}
+				}
+
+				&:hover,
+				&:focus {
+					.transition(.35s);
+					label {
+						color: @white;
+					}
+					.check {
+						border-color: @white;
+					}
+					&.la-bau {background: darken(@redColor, 10%);}
+					&.la-sce {background: darken(@orangeColor, 10%);}
+					&.la-pip {background: darken(@blueColor, 10%);}
+					&.la-map {background: darken(@yellowColor, 10%);}
+					&.la-raw {background: darken(@greenColor, 10%);}
+					&.la-win {background: darken(@purpleColor, 10%);}
+					&.la-min {background: darken(@silvrColor, 10%);}
+				}
+
+				.social_color_function(@color){
+					 background: @color;
+				}
+				&.la-sce {
+					input {
+						&:checked ~ label {
+  							.social_color_function(@orangeColor);
+  						}
+					}
+				}
+			}
+		}
+	}
+}
+/* Sidebar */

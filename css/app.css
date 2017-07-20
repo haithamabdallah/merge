@@ -1,0 +1,409 @@
+/** Fonts **/
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+html, body {
+  font-family: RobotoMedium, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+input {
+  background: white;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -moz-box-shadow: 0 0 0 100px #fff inset;
+  box-shadow: 0 0 0 100px #fff inset;
+  /* change the white to any color */
+}
+
+.bg-dark {
+  background-color: #202020;
+}
+
+/* Login */
+.ui.menu {
+  border: none;
+  box-shadow: none;
+}
+
+.ui.primary.button, .ui.primary.buttons .button {
+  background-color: #202020;
+}
+
+.ui.button {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.ui.button.register {
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+.login.menu .item {
+  color: #737373;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.ui.login.input input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  border-radius: inherit;
+  margin: 0 5px 0 5px;
+}
+
+#home-logo {
+  margin-top: 230px;
+}
+
+/* Process */
+
+.ui .breadcrumb {
+  margin-left: 30px;
+}
+
+.ui.inverted.menu {
+  background-color: #202020;
+}
+
+.po4_consumption, .po4_input {
+  width: 30px;
+}
+
+.ui.tabular.menu .item {
+  background-color: #636363;
+  border-radius: .28571429rem .28571429rem 0 0 !important;
+  font-size: 16px;
+  font-family: RobotoBold;
+}
+
+.ui.tabular.menu .item:hover {
+  background-color: #636363;
+}
+
+.ui.tabular.menu .item.tab-plus {
+  background-color: inherit;
+  width: inherit;
+}
+
+.ui.button {
+  background-color: #f2f2f2;
+}
+
+.ui.button.green.active {
+  background-color: #dbecc7;
+}
+
+.ui.breadcrumb a {
+  color: #202020;
+  font-size: 13px;
+  font-family: RobotoMedium;
+}
+
+.ui.structured.table {
+  border-collapse: separate;
+}
+
+.ui.table.processes {
+  border: none;
+  border-spacing: 0 20px;
+}
+
+.ui.table thead tr.legend th {
+  background-color: #ffffff;
+  font-family: RobotoMedium;
+  font-style: italic;
+  font-size: 11px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ui.table thead tr.legend th div {
+  font-size: 12px;
+}
+
+.ui.table thead tr.legend th div.po4-legend-title {
+  font-family: RobotoBold;
+  font-size: 17px;
+  color: #3d474d;
+}
+
+.ui.structured.celled.table tr.legend th {
+  border: none;
+}
+
+.ui.table thead tr.total th {
+  background-color: #202020;
+  font-family: RobotoMedium;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+.ui.table thead tr.total th.great-total {
+  font-family: RobotoMedium;
+  font-size: 16px;
+  color: #475359;
+}
+
+.ui.structured.celled.table tr.po4-sp > td {
+  border: none;
+}
+
+.ui.structured.celled.table tr.po4-sp td.shortname {
+  font-size: 36px;
+  font-family: RobotoBold;
+  width: 100px;
+  color: #ffffff;
+}
+
+.ui.structured.celled.table tr.po4-sp td.longname {
+  font-size: 16px;
+  font-family: RobotoMedium;
+  width: 150px;
+  color: #ffffff;
+}
+
+.ui.structured.celled.table tr.po4-sp td.longname a {
+  color: #ffffff;
+}
+
+.ui.table tr td.inputs {
+  padding: 0 2px 0 2px;
+}
+
+.table-inputs tr:nth-child(even) {
+  background-color: #f7faf5;
+}
+
+.table-inputs tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.table-resources tr:nth-child(even) {
+  background-color: #f5f8fa;
+}
+
+.table-resources tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.ui.structured.celled.table tr td, .ui.structured.celled.table tr th {
+  border-right: none;
+}
+
+.ui.table tr:first-child td {
+  border-top: none;
+}
+
+.ui.structured.celled.table tr.po4-sp > td.cell-consumption-1 {
+  border: 1px solid #e6e6e6;
+  /*border-radius: .28571429rem;*/
+}
+
+.ui.structured.celled.table tr.po4-sp > td .ui.table {
+  height: 100%;
+}
+
+.ui.structured.celled.table tr.po4-sp > td.cell-consumption-2 {
+  border: 1px solid #e6e6e6;
+  /*border-radius: .28571429rem;*/
+  background-color: #f5f8fa;
+}
+
+.ui.structured.celled.table tr.po4-sp > td.cell-co2 {
+  border: 1px solid #e6e6e6;
+  /*border-radius: .28571429rem;*/
+  background-color: #faf5f5;
+}
+
+/* Chart */
+.po4-chart-title {
+  font-size: 16px;
+  font-family: RobotoMedium;
+  color: #202020;
+  margin-left: 30px;
+}
+
+.po4-chart {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Compare */
+
+#compare-left-panel {
+  background-color: #202020;
+  color: #ffffff;
+  font-family: RobotoMedium;
+  font-size: 16px;
+}
+
+#compare-top-consumption {
+  background-color: #202020;
+  color: #ffffff;
+  font-family: RobotoMedium;
+  font-size: 16px;
+  padding-right: 0;
+  height: 50px;
+}
+
+#compare-charts {
+  min-height: 100%;
+  background-color: #ffffff;
+}
+
+/* Modal */
+
+#modal_consumption .header > .grid,
+#modal_input .header > .grid,
+#modal_resource .header > .grid,
+#modal_co2 .header > .grid,
+#modal_output_export .header > .grid,
+#modal_output .header > .grid{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#modal_consumption .content,
+#modal_input .content,
+#modal_output_export .content,
+#modal_resource .content,
+#modal_co2 .content,
+#modal_output .content {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#modal_consumption .actions,
+#modal_input .actions,
+#modal_output_export .actions,
+#modal_resource .actions,
+#modal_co2 .actions,
+#modal_output .actions {
+  padding-left: 60px;
+  padding-bottom: 40px;
+}
+
+#fc-short-name,
+#fi-short-name,
+#fr-short-name,
+#fe-short-name,
+#fco2-short-name,
+#fo-short-name {
+  font-size: 77px;
+  font-family: RobotoBold;
+  color: #ffffff;
+}
+
+#fc-name,
+#fi-name,
+#fe-name,
+#fco2-name,
+#fr-name,
+#fo-name {
+  font-size: 20px;
+  font-family: RobotoMedium;
+  color: #ffffff;
+}
+
+#fc-topic-label,
+#fi-topic-label,
+#fe-topic-label,
+#fco2-topic-label,
+#fr-topic-label,
+#fo-topic-label {
+  font-family: RobotoBold;
+  font-size: 14px;
+  color: #202020;
+}
+
+#fc_formula,
+#fi_formula,
+#fe_formula,
+#fr_formula,
+#fco2_formula,
+#fo_formula {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: inherit;
+}
+
+#fc-topic-label .equal,
+#fi-topic-label .equal,
+#fe-topic-label .equal,
+#fr-topic-label .equal,
+#fco2-topic-label .equal,
+#fo-topic-label .equal {
+  padding-left: 27px;
+  font-size: 30px;
+  font-family: RobotoBold;
+  color: #202020;
+}
+
+#fc-topic-label-second .equal,
+#fi-topic-label-second .equal,
+#fr-topic-label-second .equal,
+#fe-topic-label-second .equal,
+#fco2-topic-label-second .equal,
+#fo-topic-label-second .equal {
+  padding-left: 27px;
+  font-size: 30px;
+  font-family: RobotoBold;
+  color: #82949d;
+}
+
+.ui.input input.input-bottom-line {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: inherit;
+}
+
+.actions .ui.button {
+  padding: 0;
+}
+
+.user-profile-title {
+  font-family: RobotoMedium;
+  font-size: 11px;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+#user-profile .ui.button.profiles {
+  padding: 0;
+  margin: 0 2px 0 2px;
+}
+
+.ui.tabular.menu .item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#fixed-top-right-button {
+  position: absolute;
+  top:4px;
+  right: 5px;
+}
+
+#compare-scenarios-list {
+  color: #ffffff;
+}
+
+#compare-scenarios-list .ui.checkbox label, #compare-scenarios-list .ui.checkbox+label {
+  color: #ffffff;
+  font-family: RobotoMedium;
+  font-size: 13px;
+}
